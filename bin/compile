@@ -187,6 +187,12 @@ function bloom_vendor() {
   export CPATH="$path/$include:$CPATH"
   export LIBRARY_PATH="$path/lib:$LIBRARY_PATH"
   export PKG_CONFIG_PATH="$path/lib/pkgconfig:$PKG_CONFIG_PATH"
+  
+  echo "       Exported Paths:"
+  echo "              CPPPATH = $CPPPATH"
+  echo "              CPATH = $CPATH"
+  echo "              LIBRARY_PATH = $LIBRARY_PATH"
+  echo "              PKG_CONFIG_PATH = $PKG_CONFIG_PATH"
 }
 
 echo "-----> Vendoring Cairo"
